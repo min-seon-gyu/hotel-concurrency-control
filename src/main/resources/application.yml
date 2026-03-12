@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: hotel-reservation
+  datasource:
+    hikari:
+      maximum-pool-size: 20
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
